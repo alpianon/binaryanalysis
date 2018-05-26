@@ -1,0 +1,34 @@
+Format: 1.8
+Date: Wed, 26 Jul 2017 00:49:14 +0200
+Source: bat
+Binary: bat
+Architecture: source all
+Version: 37.0
+Distribution: unstable
+Urgency: high
+Maintainer: Armijn Hemel <armijn@binaryanalysis.org>
+Changed-By: Armijn Hemel <armijn@binaryanalysis.org>
+Description:
+ bat        - Modular framework to assist auditing binary files
+Changes:
+ bat (37.0) unstable; urgency=high
+ .
+   * FINAL RELEASE OF BAT
+   * prevent crash in processing filenames with 'weird' character
+   * proper cleanup after lzop barf
+   * allow storing of top level JSON files in a separate directory
+Checksums-Sha1:
+ 2ccf9d5bb217fbbc141f429a8a0bc078e1e8c409 537 bat_37.0.dsc
+ 6c8c6020722e0b02b3ac145ef86bd53860990787 321212 bat_37.0.tar.gz
+ 6a95dc50467c256b701472cdec41a5e469ae0f67 172332 bat_37.0_all.deb
+ 3030bcfe442420a29ae6988e53f2e6358d16248d 4945 bat_37.0_amd64.buildinfo
+Checksums-Sha256:
+ f0f5021768921dcd19597c2637b0899618bdfa0c11a4f662dba637b0b825ca8e 537 bat_37.0.dsc
+ c9dd82c6548f65eb776f8c63378e976687aa810a7a9ab583a0e9cf518e1ee663 321212 bat_37.0.tar.gz
+ 4e06604bbb2cfbbc44aea1c2a2434abd34df15579cfa9274109fee2e80d4c95a 172332 bat_37.0_all.deb
+ 16ce3e75875286c367aa05408e0784ac149e92aa64b771d3c93bf956237d2c7e 4945 bat_37.0_amd64.buildinfo
+Files:
+ d622d84cf33145d4de41f320f3ce100a 537 misc extra bat_37.0.dsc
+ 9932626e932ce4f4f9ee95f2edf9061d 321212 misc extra bat_37.0.tar.gz
+ 3270c2d55252a539293dc39c0eb455ca 172332 misc extra bat_37.0_all.deb
+ 32925ffa6d517210a622b3276a90b8e3 4945 misc extra bat_37.0_amd64.buildinfo
