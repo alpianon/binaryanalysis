@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Wed, 26 Jul 2017 00:49:14 +0200
+Source: bat
+Binary: bat
+Architecture: source all
+Version: 37.0
+Distribution: unstable
+Urgency: high
+Maintainer: Armijn Hemel <armijn@binaryanalysis.org>
+Changed-By: Armijn Hemel <armijn@binaryanalysis.org>
+Description:
+ bat        - Modular framework to assist auditing binary files
+Changes:
+ bat (37.0) unstable; urgency=high
+ .
+   * FINAL RELEASE OF BAT
+   * prevent crash in processing filenames with 'weird' character
+   * proper cleanup after lzop barf
+   * allow storing of top level JSON files in a separate directory
+Checksums-Sha1:
+ ffad8f92595997264ac1c99c1a38abf09e5f01b4 537 bat_37.0.dsc
+ 236c063c29e2515b6bbd23baabe7e9f6fcd27348 323083 bat_37.0.tar.gz
+ c178cd0dc87b4503119f62a780de350b049ff1f8 172672 bat_37.0_all.deb
+Checksums-Sha256:
+ 30fe5dbd8fa20dfc9896bd363289c8a38c88c3f6b8e25176ae9f376b3ab08909 537 bat_37.0.dsc
+ 9c15639c7743c7a117034ba9483181098fa75cb510bde3d9a0c5359802c45e01 323083 bat_37.0.tar.gz
+ f7fa61ad7779b7ddd10aa07e625211fb4fe3a2848451729c9e9cca3a52314158 172672 bat_37.0_all.deb
+Files:
+ e01f44078d03b56e443dab8d14e288a4 537 misc extra bat_37.0.dsc
+ 3684e56e29933c11d11d559b6bcd9e1b 323083 misc extra bat_37.0.tar.gz
+ 15bab13cd9e71a4328c410e697439551 172672 misc extra bat_37.0_all.deb

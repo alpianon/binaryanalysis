@@ -1,0 +1,181 @@
+ dpkg-buildpackage -rfakeroot -D -us -uc
+dpkg-buildpackage: warning: using a gain-root-command while being root
+dpkg-buildpackage: source package bat
+dpkg-buildpackage: source version 37.0
+dpkg-buildpackage: source distribution unstable
+dpkg-buildpackage: source changed by Armijn Hemel <armijn@binaryanalysis.org>
+ dpkg-source --before-build src
+dpkg-buildpackage: host architecture amd64
+ fakeroot debian/rules clean
+dh clean 
+   dh_testdir
+   dh_auto_clean
+pyversions: missing X(S)-Python-Version in control file, fall back to debian/pyversions
+running clean
+'build/lib.linux-x86_64-2.7' does not exist -- can't clean it
+'build/bdist.linux-x86_64' does not exist -- can't clean it
+'build/scripts-2.7' does not exist -- can't clean it
+   dh_clean
+ dpkg-source -b src
+dpkg-source: warning: no source format specified in debian/source/format, see dpkg-source(1)
+dpkg-source: warning: source directory 'src' is not <sourcepackage>-<upstreamversion> 'bat-37.0'
+dpkg-source: info: using source format `1.0'
+dpkg-source: info: building bat in bat_37.0.tar.gz
+dpkg-source: info: building bat in bat_37.0.dsc
+ debian/rules build
+dh build 
+   dh_testdir
+   dh_auto_configure
+   dh_auto_build
+pyversions: missing X(S)-Python-Version in control file, fall back to debian/pyversions
+running build
+running build_py
+creating build
+creating build/lib.linux-x86_64-2.7
+creating build/lib.linux-x86_64-2.7/bat
+copying bat/javacheck.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/renamefiles.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/fsmagic.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/kernelanalysis.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/busyboxversion.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/kernelsymbols.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/interfaces.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/file2package.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/ext2.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/__init__.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/prerun.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/findlibs.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/identifier.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/busybox.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/extractor.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/guireport.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/fwunpack.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/generateimages.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/findduplicates.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/images.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/generatejson.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/reportcopyright.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/derivekernelconfig.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/jffs2.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/checks.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/generatehexdump.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/generatereports.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/fssearch.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/fixduplicates.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/unpackrpm.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/prunefiles.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/licenseversion.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/piecharts.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/bruteforcescan.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/batxor.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/elfcheck.py -> build/lib.linux-x86_64-2.7/bat
+copying bat/security.py -> build/lib.linux-x86_64-2.7/bat
+running build_scripts
+creating build/scripts-2.7
+copying and adjusting maintenance/busybox-appletname-extractor.py -> build/scripts-2.7
+copying and adjusting maintenance/clonedbinit.py -> build/scripts-2.7
+copying and adjusting bat-scan -> build/scripts-2.7
+copying and adjusting busybox-compare-configs.py -> build/scripts-2.7
+changing mode of build/scripts-2.7/busybox-appletname-extractor.py from 644 to 755
+changing mode of build/scripts-2.7/clonedbinit.py from 644 to 755
+changing mode of build/scripts-2.7/bat-scan from 644 to 755
+changing mode of build/scripts-2.7/busybox-compare-configs.py from 644 to 755
+   dh_auto_test
+ fakeroot debian/rules binary
+dh binary 
+   dh_testroot
+   dh_prep
+   dh_auto_install
+pyversions: missing X(S)-Python-Version in control file, fall back to debian/pyversions
+running install
+running build
+running build_py
+running build_scripts
+running install_lib
+creating /root/binaryanalysis/src/debian/bat/usr
+creating /root/binaryanalysis/src/debian/bat/usr/lib
+creating /root/binaryanalysis/src/debian/bat/usr/lib/python2.7
+creating /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages
+creating /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/javacheck.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/renamefiles.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/fsmagic.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/kernelanalysis.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/busyboxversion.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/kernelsymbols.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/interfaces.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/file2package.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/ext2.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/__init__.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/prerun.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/findlibs.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/identifier.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/busybox.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/extractor.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/guireport.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/fwunpack.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/generateimages.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/findduplicates.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/images.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/generatejson.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/reportcopyright.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/derivekernelconfig.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/jffs2.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/checks.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/generatehexdump.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/generatereports.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/fssearch.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/fixduplicates.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/unpackrpm.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/prunefiles.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/licenseversion.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/piecharts.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/bruteforcescan.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/batxor.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/elfcheck.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+copying build/lib.linux-x86_64-2.7/bat/security.py -> /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat
+running install_scripts
+creating /root/binaryanalysis/src/debian/bat/usr/bin
+copying build/scripts-2.7/clonedbinit.py -> /root/binaryanalysis/src/debian/bat/usr/bin
+copying build/scripts-2.7/bat-scan -> /root/binaryanalysis/src/debian/bat/usr/bin
+copying build/scripts-2.7/busybox-compare-configs.py -> /root/binaryanalysis/src/debian/bat/usr/bin
+copying build/scripts-2.7/busybox-appletname-extractor.py -> /root/binaryanalysis/src/debian/bat/usr/bin
+changing mode of /root/binaryanalysis/src/debian/bat/usr/bin/clonedbinit.py to 755
+changing mode of /root/binaryanalysis/src/debian/bat/usr/bin/bat-scan to 755
+changing mode of /root/binaryanalysis/src/debian/bat/usr/bin/busybox-compare-configs.py to 755
+changing mode of /root/binaryanalysis/src/debian/bat/usr/bin/busybox-appletname-extractor.py to 755
+running install_data
+creating /root/binaryanalysis/src/debian/bat/etc
+creating /root/binaryanalysis/src/debian/bat/etc/bat
+copying bat-scan.config -> /root/binaryanalysis/src/debian/bat/etc/bat
+running install_egg_info
+Writing /root/binaryanalysis/src/debian/bat/usr/lib/python2.7/dist-packages/bat-37.0.egg-info
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_compress
+   dh_fixperms
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: generazione del pacchetto "bat" in "../bat_37.0_all.deb".
+ dpkg-genchanges  >../bat_37.0_amd64.changes
+dpkg-genchanges: including full source code in upload
+ dpkg-source --after-build src
+dpkg-buildpackage: full upload; Debian-native package (full source is included)
+Now running lintian...
+warning: the authors of lintian do not recommend running it with root privileges!
+W: bat source: debhelper-but-no-misc-depends bat
+W: bat source: package-needs-versioned-debhelper-build-depends 9
+W: bat source: newer-standards-version 3.9.8 (current is 3.9.6)
+E: bat: depends-on-obsolete-package depends: python-support (>= 0.90) => use dh_python2 instead
+W: bat: script-with-language-extension usr/bin/busybox-appletname-extractor.py
+W: bat: script-with-language-extension usr/bin/busybox-compare-configs.py
+W: bat: script-with-language-extension usr/bin/clonedbinit.py
+W: bat: binary-without-manpage usr/bin/bat-scan
+W: bat: binary-without-manpage usr/bin/busybox-appletname-extractor.py
+W: bat: binary-without-manpage usr/bin/busybox-compare-configs.py
+W: bat: binary-without-manpage usr/bin/clonedbinit.py
+Finished running lintian.
